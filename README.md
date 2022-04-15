@@ -10,7 +10,8 @@ Has support for multiprecision operation
 </ul>
 
 ## Example
-```LUDecomposer::MatrixD mat({ { 1, -1, 0}, { 2, 2, 3}, { -1, 3, 2}});
+```c++
+LUDecomposer::MatrixD mat({ { 1, -1, 0}, { 2, 2, 3}, { -1, 3, 2}});
     LUDecomposer dcmp( mat);
     const auto& [ lm, um]  = dcmp.soln();
 
